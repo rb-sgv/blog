@@ -1,5 +1,6 @@
 import Header from "../_components/header";
 import Blogtext from "../_components/blogtext";
+import Spinsmile from '@/app/_components/spinsmile'
 
 export default function BlogPage() {
 
@@ -7,6 +8,7 @@ export default function BlogPage() {
     <>
       <Header/>
       <Blogtext/>
+      <Spinsmile />
       
     </>
   );
