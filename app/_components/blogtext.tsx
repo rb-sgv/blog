@@ -1,11 +1,24 @@
 import React from 'react'
+import Link from 'next/link'
 
-export default function blogtext() {
+export default async function blogtext() {
+
+  const response = await fetch ("https://jsonplaceholder.typicode.com/posts");
+  const posts = await response.json();
   return (
-    <div className='bg-[#ff9f1c]'>
-      <h1 className='text-[#CBF3F0] hover:text-[#2EC4B6]'>
-        Posts
-      </h1>
+    <div className='bg-[#ff9f1c]  bg-[#ff9f1c] rounded-lg m-1 flex justify-center w-fit ml-auto mr-auto mt-20 p-5'>
+        <ul className='space-y-3'>
+          {posts.slice(0, 5).map((post) => (
+            <li key={post.id}>
+            <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
+              <Link
+              href={'/posts/}${post.id}'} className="text-lg text-[#CBF3F0] hover:text-[#2EC4B6]">
+                {post.title.charAt(0).toUpperCase() + post.title.slice(1)}
+              </Link>
+            </div>
+            </li>
+          ))}
+        </ul>
     </div>
   )
 }

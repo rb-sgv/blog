@@ -12,7 +12,7 @@ const Header = () => {
           <div className='hidden md:flex space-x-6'>
             <Link href="/" className='hover:text-[#2EC4B6]'>Home</Link>
             <Link href="/about" className='hover:text-[#2EC4B6]'>About</Link>
-            <Link href="/services" className='hover:text-[#2EC4B6]'>Services</Link>
+            <Link href="/posts" className='hover:text-[#2EC4B6]'>Posts</Link>
             <Link href="/contact" className='hover:text-[#2EC4B6]'>Contact</Link>
           </div>
 
