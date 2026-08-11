@@ -1,10 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default async function blogtext() {
+type Post = {
+  id: number
+  title: string
+}
 
-  const response = await fetch ("https://jsonplaceholder.typicode.com/posts");
-  const posts = await response.json();
+export default async function Blogtext() {
+
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const posts: Post[] = await response.json()
   return (
     <div className='bg-[#ff9f1c]  bg-[#ff9f1c] rounded-lg m-1 flex justify-center w-fit ml-auto mr-auto mt-20 p-5'>
         <ul className='space-y-3'>
@@ -12,7 +17,7 @@ export default async function blogtext() {
             <li key={post.id}>
             <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
               <Link
-              href={'/posts/}${post.id}'} className="text-lg text-[#CBF3F0] hover:text-[#2EC4B6]">
+                href={`/posts/${post.id}`} className="text-lg text-[#CBF3F0] hover:text-[#2EC4B6]">
                 {post.title.charAt(0).toUpperCase() + post.title.slice(1)}
               </Link>
             </div>
