@@ -7,6 +7,11 @@ export default function Home() {
     <>
       <Header />
       <Welcome />
+      <div className="animate-pulse">
+              <h2 className='font-light opacity-50 text-[#ff9f1c] text-center'>
+          ^ click one of the links in the navigation ^
+        </h2>
+        </div>
       <Spinsmile />
     </>
   );
