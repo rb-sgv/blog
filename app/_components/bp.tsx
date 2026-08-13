@@ -19,7 +19,7 @@ const response = await fetch (
 
   return (
     <article className='space-y-6'>
-        <div className='space-y-4  bg-[#ff9f1c] rounded-lg justify-center ml-35 mr-35 mt-20 p-5'>
+        <div className='space-y-4  bg-[#fe9100]/20 backdrop-blur-md rounded-lg justify-center ml-35 mr-35 mt-20 p-5'>
             <h1 className='text-center text-4xl text-[#CBF3F0]'>
                 {post.title.charAt(0).toUpperCase() + post.title.slice(1)}
             </h1>

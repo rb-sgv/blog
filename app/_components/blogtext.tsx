@@ -11,7 +11,7 @@ export default async function Blogtext() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts")
   const posts: Post[] = await response.json()
   return (
-    <div className='bg-[#ff9f1c] rounded-lg m-1 flex justify-center w-fit ml-auto mr-auto mt-20 p-5'>
+    <div className='bg-[#fe9100]/20 backdrop-blur-md rounded-lg m-1 flex justify-center w-fit ml-auto mr-auto mt-20 p-5'>
         <ul className='space-y-3'>
           {posts.slice(0, 10).map((post) => (
             <li key={post.id}>
