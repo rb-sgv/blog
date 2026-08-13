@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import React from 'react'
 
 type BpProps = {
@@ -11,6 +12,11 @@ const response = await fetch (
   `https://jsonplaceholder.typicode.com/posts/${blogpage}`, 
 );
   const post = await response.json();
+
+  if (!post.id) {
+    notFound();
+  }
+
   return (
     <article className='space-y-6'>
         <div className='space-y-4  bg-[#ff9f1c] rounded-lg justify-center ml-35 mr-35 mt-20 p-5'>
