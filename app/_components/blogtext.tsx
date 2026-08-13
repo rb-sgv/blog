@@ -13,7 +13,7 @@ export default async function Blogtext() {
   return (
     <div className='bg-[#ff9f1c] rounded-lg m-1 flex justify-center w-fit ml-auto mr-auto mt-20 p-5'>
         <ul className='space-y-3'>
-          {posts.slice(0, 5).map((post) => (
+          {posts.slice(0, 10).map((post) => (
             <li key={post.id}>
             <div className='p-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center'>
               <Link
