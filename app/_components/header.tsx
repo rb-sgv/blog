@@ -7,10 +7,10 @@ const Header = () => {
         <div className='max-w-6xl mx-auto px-6 py-4 flex justify-center items-center'>
 
           <div className='hidden md:flex space-x-6'>
-            <Link href="/" className='hover:text-[#2EC4B6] hover:scale-105 transition delay-0'>Home</Link>
-            <Link href="/about" className='hover:text-[#2EC4B6] hover:scale-105 transition delay-0'>About</Link>
-            <Link href="/posts" className='hover:text-[#2EC4B6] hover:scale-105 transition delay-0'>Posts</Link>
-            <Link href="/contact" className='hover:text-[#2EC4B6] hover:scale-105 transition delay-0'>Contact</Link>
+            <Link href="/" className='hover:text-[#2EC4B6] hover:scale-110 transition delay-0'>Home</Link>
+            <Link href="/about" className='hover:text-[#2EC4B6] hover:scale-110 transition delay-0'>About</Link>
+            <Link href="/posts" className='hover:text-[#2EC4B6] hover:scale-110 transition delay-0'>Posts</Link>
+            <Link href="/contact" className='hover:text-[#2EC4B6] hover:scale-110 transition delay-0'>Contact</Link>
           </div>
 
         </div>
