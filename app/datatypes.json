@@ -1,0 +1,20 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Stetige Daten",
+    "body": "Stetige Daten (auch kontinuierliche Daten genannt) sind Messwerte, die innerhalb eines bestimmten Bereichs jeden beliebigen Zahlenwert annehmen können. Sie sind theoretisch unendlich genau teilbar und weisen Nachkommastellen auf. Sie werden in der Regel gemessen und nicht gezählt.\n\nUm stetige Daten besser zu verstehen, grenzt man sie meist von anderen Datentypen ab:\n\nStetige Daten: Werte, die nahtlos ineinander übergehen und beliebig genau gemessen werden können. Beispiele sind die Körpergröße, das Gewicht oder die Zeit. Jemand kann 75 Kilogramm wiegen, aber eben auch 75,4 oder 75,423 Kilogramm. Zwischen zwei Werten ist immer noch ein weiterer Wert möglich.\n\nDiskrete Daten: Das direkte Gegenteil zu stetigen Daten. Diese Werte können nur ganz bestimmte, abgegrenzte Zahlen annehmen, meistens ganze Zahlen. Man erhält sie durch Zählen. Ein Beispiel ist die Anzahl der Mitarbeiter in einem Unternehmen oder die geworfenen Augen auf einem Würfel. Es gibt keine 2,5 Mitarbeiter.\n\nQuasi-stetige Daten: Ein Sonderfall in der Praxis. Das sind eigentlich diskrete Daten, die aber so viele feine Abstufungen haben, dass man sie bei Auswertungen wie stetige Daten behandelt. Ein klassisches Beispiel sind Geldbeträge: Zwar gibt es als kleinste Einheit den Cent oder Rappen, aber in der Analyse wird Geld aufgrund der vielen feinen Abstufungen fast immer als stetiger Wert betrachtet."
+  },
+    {
+    "userId": 1,
+    "id": 2,
+    "title": "Häufbare Daten",
+    "body": "Häufbare Daten (oft auch additive Daten genannt) sind Zahlenwerte, die man logisch zusammenzählen kann. Eine einfache Addition ergibt hier ein sinnvolles Gesamtergebnis. Das ist in der Datenverarbeitung wichtig, um Rechenfehler bei Auswertungen zu vermeiden.\nMan unterscheidet drei Typen:\nVoll-häufbare Daten: Werte, die man immer und über alle Bereiche hinweg addieren kann. Ein Beispiel ist der Umsatz: Der Umsatz von Montag plus der Umsatz von Dienstag ergibt den korrekten Gesamtumsatz.\nSemi-häufbare Daten: Werte, die man nur teilweise zusammenzählen darf, meistens aber nicht über die Zeit hinweg. Ein Beispiel ist der Lagerbestand: Man kann die Bestände zweier Filialen für eine Gesamtsumme addieren. Man darf aber nicht den Bestand von gestern und heute addieren, da man sonst doppelt zählt.\nNicht-häufbare Daten: Werte, die man gar nicht addieren darf. Hier berechnet man stattdessen den Durchschnitt. Beispiele sind Temperaturen, Stückpreise oder Prozentwerte (20 Prozent plus 20 Prozent ergeben als Gesamtleistung selten 40 Prozent)."
+  },
+    {
+    "userId": 1,
+    "id": 3,
+    "title": "Diskrete Daten",
+    "body": "Diskrete Daten sind Werte, die nur ganz bestimmte, fest voneinander abgegrenzte Ausprägungen annehmen können. In der Regel handelt es sich dabei um ganze Zahlen. Sie entstehen durch Zählen und können nicht beliebig fein unterteilt werden, da es zwischen den einzelnen Werten keine logischen Zwischenschritte gibt.\n\nUm diskrete Daten richtig einzuordnen, hilft der Vergleich:\n\nDiskrete Daten: Werte, die klar zählbar sind. Ein klassisches Beispiel ist die Anzahl von Personen in einem Raum, die geworfenen Augen bei einem Spielwürfel oder die Menge verkaufter Tickets. Es können 2 oder 3 Tickets verkauft werden, aber niemals 2,4 Tickets.\n\nAbgrenzung zu stetigen Daten: Das genaue Gegenteil. Stetige Daten entstehen durch Messen und können jeden beliebigen, unendlich genauen Zwischenwert mit Nachkommastellen annehmen, wie zum Beispiel das genaue Gewicht oder die Temperatur.\n\nKategorische Größen: Oft treten diskrete Daten auch als feste Kategorien oder Einheiten auf. Beispiele dafür sind Schuhgrößen (39, 40, 41) oder Postleitzahlen. Auch wenn es sich um Zahlen handelt, gibt es dazwischen keine stufenlosen Übergänge."
+  }
+]

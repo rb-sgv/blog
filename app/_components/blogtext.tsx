@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import posts from '../datatypes.json'
 
 type Post = {
   id: number
@@ -8,8 +9,6 @@ type Post = {
 
 export default async function Blogtext() {
 
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts")
-  const posts: Post[] = await response.json()
   return (
     <div className='bg-[#fe9100]/20 backdrop-blur-md rounded-lg m-1 flex justify-center w-fit ml-auto mr-auto mt-20 p-5'>
         <ul className='space-y-3'>

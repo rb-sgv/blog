@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import posts from '../datatypes.json'
 import React from 'react'
 
 type BpProps = {
@@ -8,12 +9,9 @@ type BpProps = {
 export default async function bp({ params }: BpProps) {
 const { blogpage } = await params;
 
-const response = await fetch (
-  `https://jsonplaceholder.typicode.com/posts/${blogpage}`, 
-);
-  const post = await response.json();
+  const post = posts.find((entry) => entry.id === Number(blogpage));
 
-  if (!post.id) {
+  if (!post) {
     notFound();
   }
 
